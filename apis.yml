@@ -12,16 +12,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amberpoint.png
 name: Amberpoint
-description: 'AmberPoint was an enterprise software company founded in 2001 that provided runtime
-  management, monitoring, and governance solutions for Service-Oriented Architecture (SOA) and
-  distributed web-services applications. Its products let organizations discover, secure, monitor,
-  and enforce policy across complex multi-application business processes and message flows, and
-  competed in the SOA management space alongside vendors integrated into enterprise middleware
-  stacks. AmberPoint was acquired by Oracle on February 8, 2010, with its technology folded into
-  Oracle Fusion Middleware and Oracle Enterprise Manager. The company no longer operates
-  independently; the amberpoint.com domain is held by Oracle and no longer serves a public
-  developer surface. This profile is retained in the API Evangelist network as a historical
-  portfolio-lead record surfaced from a venture-capital portfolio.'
+description: AmberPoint was an enterprise software company founded in 2001 that provided runtime management, monitoring,
+  and governance solutions for Service-Oriented Architecture (SOA) and distributed web-services applications. Its
+  products let organizations discover, secure, monitor, and enforce policy across complex multi-application business
+  processes and message flows, and competed in the SOA management space alongside vendors integrated into enterprise
+  middleware stacks. AmberPoint was acquired by Oracle on February 8, 2010, with its technology folded into Oracle
+  Fusion Middleware and Oracle Enterprise Manager. The company no longer operates independently; the amberpoint.com
+  domain is held by Oracle and no longer serves a public developer surface. This profile is retained in the API
+  Evangelist network as a historical portfolio-lead record surfaced from a venture-capital portfolio.
 url: https://raw.githubusercontent.com/api-evangelist/amberpoint/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -35,7 +33,7 @@ x-acquired-date: '2010-02-08'
 x-founded: '2001'
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-08-21'
 tags:
 - Company
 - SOA
@@ -52,6 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/oracle/
+  name: Oracle
+  x-relationship: acquisition
+  x-generated-by: oracle-family:2026-08-21
+  x-acquired: 2010
 - type: DomainSecurity
   url: security/amberpoint-domain-security.yml
 - type: Website
@@ -61,3 +65,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: oracle
+x-relationship: acquisition
+x-acquired: 2010
